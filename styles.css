@@ -1,0 +1,65 @@
+/* styles.css — basic, responsive styles for the exercise page */
+:root{
+    /* page background: light purple; main text: black */
+    --bg: #f3e8ff; /* light lavender */
+    --card: #ffffff;
+    --accent: #2b6cb0;
+    --text: #000000;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    padding:2rem;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* Page wrapper - more specific selectors so styles don't leak */
+.page{
+    max-width:900px;
+    margin:0 auto;
+    background:var(--card);
+    padding:1.75rem;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(15,23,42,0.06);
+}
+
+.page-header{ text-align:center; margin-bottom:0.5rem }
+
+.page-title{
+    margin:0;
+    color:var(--accent);
+    font-size:2rem;
+    line-height:1.1;
+}
+
+.lead{
+    display:block;
+    max-width:70ch;
+    margin:0.5rem auto 0 auto;
+    font-size:1.03rem;
+    color:var(--text);
+}
+
+/* Small utility styles */
+.muted{color:rgba(26,32,44,0.6);font-size:0.95rem}
+
+/* Utility: reusable card container */
+.card{
+    max-width:600px;
+    margin:0 auto;
+    padding:16px;
+    font-size:16px;
+    border:1px solid cyan;
+}
+
+@media(min-width:640px){
+    .page{padding:2rem}
+}
+@media(max-width:480px){
+    body{padding:1rem}
+    .page-title{font-size:1.5rem}
+}

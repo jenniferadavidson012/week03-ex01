@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Jennifer Davidson</title>
-        <link rel=""stylesheet"hrf+"styles">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Jennifer Davidson</h1>
-        <p>Hi, My name is Jennier Davidson and I am from Waxahachie, Texas. My husband and I have two wonderful sons that keep us busy.</p>
-        </body>
+        <main class="page">
+            <header class="page-header">
+                <h1 class="page-title">Jennifer Davidson</h1>
+            </header>
+            <div class="card">
+                <p class="lead">Hi, my name is Jennifer Davidson and I am from Waxahachie, Texas. My husband and I have two wonderful sons that keep us busy.</p>
+            </div>
+        </main>
+    </body>
 </html>
